@@ -1,0 +1,49 @@
+<section class="product-listing">
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-md-3" *ngFor="let product of product">
+                <div class="product-wrap">
+                    <div class="img-wrap">
+                        <img src="assets/images/prt-1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="product-detail">
+                        <h5 class="title">
+                            {{product.product_name}}
+                        </h5>
+                        <p class="price">
+                            &#8377; {{product.product_price}}
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Product Price</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let product of product | paginate: { itemsPerPage: 5, currentPage: p, id: 'first' }">
+                        <td>{{product.id}}</td>
+                        <td>{{product.product_name}}</td>
+                        <td>{{product.product_price}}</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm" (click)="deleteProducts(product.id)">Delete</button>
+                        </td>
+                        
+                      </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            <div class="col-md-12 my-4 text-end">
+                <pagination-controls (pageChange)="p = $event" id="first"></pagination-controls>
+            </div>
+        </div>
+    </div>
+</section>
+

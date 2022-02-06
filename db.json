@@ -1,0 +1,68 @@
+{
+  "posts": [
+    {
+      "id": 5,
+      "product_name": "Shoes",
+      "product_price": "1000",
+      "product_image": ""
+    },
+    {
+      "id": 6,
+      "product_name": "Oppo A9",
+      "product_price": "8000",
+      "product_image": ""
+    },
+    {
+      "id": 7,
+      "product_name": "t-Shirt",
+      "product_price": "800",
+      "product_image": ""
+    },
+    {
+      "id": 9,
+      "product_name": "MI-2020",
+      "product_price": "20000",
+      "product_image": ""
+    },
+    {
+      "id": 11,
+      "product_name": "LED",
+      "product_price": "30000",
+      "product_image": ""
+    },
+    {
+      "id": 12,
+      "product_name": "Video game",
+      "product_price": "8000",
+      "product_image": ""
+    },
+    {
+      "id": 13,
+      "product_name": "Freeze",
+      "product_price": "60000",
+      "product_image": ""
+    },
+    {
+      "id": 14,
+      "product_name": "Bluetooth Speaker",
+      "product_price": "6000",
+      "product_image": ""
+    },
+    {
+      "id": 15,
+      "product_name": "Earphone",
+      "product_price": "3000",
+      "product_image": ""
+    },
+    {
+      "id": 16,
+      "product_name": "Speakers",
+      "product_price": "100000",
+      "product_image": ""
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
